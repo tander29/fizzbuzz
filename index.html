@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .boldnumber {font-weight: bold;}
+        .nobold {font-weight: normal;}
+
+        .redcolor  {color: red;}
+        .blackcolor {color: black;}
+    
+    </style>
+</head>
+<body>
+    <p></p>
+
+
+
+
+
+
+<script>
+    //definetely need further practice did not come up with this on my own and would not have been able to, try to find functional loop katas.
+    //the idea i had was to document.getElementById("MyElement").classList.add('MyClass'); to add a class, but it did not work in the loops I had set up
+    // I was also had document.write in the beginning, not at the end
+    let htmlcontent='';
+   for(let i=0; i <= 1000; i++){
+        htmlcontent +='<span class="';
+        if( i % 2 == 0){
+            htmlcontent+='redcolor '  
+        }
+        if ( i % 3 == 0) {
+            htmlcontent+=' boldnumber'  
+             
+        }
+       htmlcontent+='" >'+i+" " ;
+        htmlcontent+= '</span>'
+    }
+    document.write(htmlcontent);
+
+
+
+
+
+</script>
+
+</body>
+</html>
